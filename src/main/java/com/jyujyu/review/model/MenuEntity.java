@@ -3,10 +3,12 @@ package com.jyujyu.review.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.ZonedDateTime;
 
+@Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,7 +21,7 @@ public class MenuEntity {
 
     private Long restaurantId;
     private String name;
-    private String price;
+    private Integer price;
     private ZonedDateTime createdAt;
     private ZonedDateTime updatedAt;
 }

@@ -8,5 +8,5 @@ import lombok.Getter;
 public class CreateAndEditRestaurantRequestMenu {
     private final String name;
     private final String address;
-    private final String price;
+    private final Integer price;
 }
